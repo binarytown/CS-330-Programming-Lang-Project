@@ -78,7 +78,7 @@ This is to show how one can write comments while writing s program in C++.
 // This is a single line comment;
 ```
 
-2. To write comments which might take more than just one single, we can use the **_/**/_** operator.
+2. To write comments which might take more than just one single, we can use the /* */operator.
 ```
 /* This is used to write comments which might take more than a single line to describe
 the reasoning behind your coding choices; */
