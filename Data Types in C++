@@ -1,2 +1,46 @@
-In this file we'll be talkin about and seeing examples of C++ primitive and composite data types 
-Some of which include int, float, bool, string, vector, and map
+// In this file we'll be talkin about and seeing examples of C++ primitive and composite data types 
+// Some of which include int, float, bool, string, vector, and map
+// PLP2 - Data Types and Naming Conventions in C++
+// This short program shows basic variable types and simple operations.
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+using namespace std;
+
+int main() { // We will be using basic datatypes
+    // Basic data types
+    int age = 20;                 // integer
+    float height = 5.5;           // floating-point number
+    bool isStudent = true;        // boolean (true or false)
+    string name = "Isis";         // string (text)
+
+    // These are collection types - array/list example using vector
+    vector<int> numbers = {1, 2, 3, 4, 5};
+
+    // dictionary example using map
+    map<string, int> grades = {{"Math", 95}, {"CS", 98}};
+
+    // simple operations
+    int nextYearAge = age + 1;    // arithmetic operation
+    float total = height + 1.2;   // mixed type (int + float → float)
+
+    // our output
+    cout << "Name: " << name << endl;
+    cout << "Age next year: " << nextYearAge << endl;
+    cout << "Height: " << total << endl;
+    cout << "Is Student: " << isStudent << endl;
+    cout << "Math Grade: " << grades["Math"] << endl;
+
+    return 0;
+}
+/* Notes: 
+Data types tell the computer what kind of information a variable storesFor example:
+int means whole numbers like 5, 100, -3
+
+float means numbers with decimals like 5.5 or 3.14
+
+bool means true or false values
+
+string means text, like "Hello" */
