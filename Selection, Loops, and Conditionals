@@ -1,0 +1,71 @@
+// PLP 3 - Selection, loops, and conditionals
+/* C++ uses the boolean data tyle, which offers two values: true and false;
+C++ also supports condtional statements like: if, if/else, if/else if/else, switch/case;
+*/
+
+// Example 1: one-condition if/else
+
+bool x = true;
+if (x == true) {
+    cout << "The boolean x is true" << endl;
+} else {
+    cout << "The boolean x is false" << endl;
+}
+
+// Example 2: multi-condition if/else
+
+int x = 4;
+int y = 8;
+if (x > 0 && y < 10) {
+    cout << "x is greater than 0 and y is less than 10" << endl;
+} else {
+    cout << "The loop conditions were not satisfied" << endl;
+}
+
+// Example 3: if/else if/else
+
+int num = 0;
+if (num > 0) {
+    cout << "Positive number" << endl;
+} else if (num < 0) {
+    cout << "Negative number" << endl;
+} else {
+    cout << "The value of num is zero!" << endl;
+}
+
+// Short-circut logic: 
+// X && Y: evaluate Y only if X is true
+// X || Y: evaluate Y only if X is false
+
+// Example 4: Short-circuit
+
+int a = 4;
+int b = 0;
+if (b > 0 && (a/b) >= 2) {
+    cout << "There might be some trouble running this code" << endl;
+} 
+else {
+    cout << "Short circuit prevents div by 0" << endl;
+}
+
+
+// Example 5: Switch case
+
+int choice = 3;
+switch (choice) {
+    case 1:
+        cout << "Weather is pleasant" << endl;
+        break;
+    case 2:
+        cout << "There's incoming rain" << endl;
+        break;
+    case 3:
+        cout << "Winter is comming" << endl;
+        break;
+    default:
+        cout << "Invalid option" << endl;
+}
+
+
+
+
