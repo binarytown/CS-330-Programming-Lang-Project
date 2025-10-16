@@ -49,7 +49,11 @@ else {
 }
 
 
-// Example 5: Switch case
+// Example 5: Switch Statements
+// C++ supports switch statements with case labels;
+// You must use break to exit a case;
+// If you omit break, execution falls through to the next case;
+
 
 int choice = 3;
 switch (choice) {
@@ -66,6 +70,16 @@ switch (choice) {
         cout << "Invalid option" << endl;
 }
 
+// Dangling Else Issue
+// C++ solves any sort of dangling else issues by matching with the closest unmatched if
+
+if (x > 0) { 
+    if (x < 10) {
+        cout << "X is Positive";
+   } else {
+        cout << "X is not positive"; // else pairs with the inner if
+   }
+}
 
 
 
