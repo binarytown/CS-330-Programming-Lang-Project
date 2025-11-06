@@ -51,6 +51,7 @@ double describe(string name, int age) {
     return age * 1.0;
 }
 
+// More infomaton: 
 //C++ functions combine power and structure for clean code design.
 //They support recursion, overloading, multiple parameter types, and multiple return options.
 //pass-by-value - copies data. Use & for pass-by-reference.
