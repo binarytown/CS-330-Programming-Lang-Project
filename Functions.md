@@ -1,5 +1,6 @@
-// PLP Assignment 4 - Functions
-// In C++, fucntions are used as reusable blocks of code designed to perform our desired tasks. They allow us programmers to organize our code, avoid any sort of repetition, and make programs easier to maintain and debug. A function can take inputs (called parameters), execute statements, and return a result.
+# PLP Assignment 4 - Functions
+
+In C++, fucntions are used as reusable blocks of code designed to perform our desired tasks. They allow us programmers to organize our code, avoid any sort of repetition, and make programs easier to maintain and debug. A function can take inputs (called parameters), execute statements, and return a result.
 
 // Every C++ function has:
 a return type (int, void, etc.)
