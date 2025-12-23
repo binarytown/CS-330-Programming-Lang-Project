@@ -88,9 +88,9 @@ This is to show how one can write comments while writing s program in C++.
 the reasoning behind your coding choices; */
 ```
 ## PLP2 - Data Types and Naming Conventions in C++
-** Now we'll be talkin about and seeing examples of C++ primitive and composite data types 
-**  Some of which include int, float, bool, string, vector, and map
-** This short program shows basic variable types and simple operations.
+**Now we'll be talkin about and seeing examples of C++ primitive and composite data types**
+**Some of which include int, float, bool, string, vector, and map**
+**This short program shows basic variable types and simple operations.**
 
 ```
 #include <iostream>
@@ -192,6 +192,8 @@ int factorial(int n) {
 
 ## PLP Assignment 5 - Classes and Inheritance
 
+**The code file is named cat.cpp**
+
 In C++, classes are used to create objects that group together data and functions that operate on the same data. This helps us with the real-world entities like people and students. C++ is an object-oriented language, so it fully supports classes, objects, and inheritance.
 
 **Every C++ class has:**
@@ -234,9 +236,6 @@ public:
 In C++ inheritance allows one class to reuse the attributes and functions of another class.
 Here the student class inherits from person using public inheritance.
 
-```
-
-```
 **Notes:**
 - petCat gets cat_name, cat_age, setAge, and other functionality from Cat;
 - we added cat_owner and setOwner;
