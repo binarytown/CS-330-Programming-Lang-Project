@@ -131,60 +131,46 @@ bool means true or false values
 string means text, like "Hello" */
 
 
+## PLP Assignment 3 - Selection, loops, and conditionals
+** C++ uses the boolean data tyle, which offers two values: true and false;
+** C++ also supports **condtional statements[^3]:** like: if, if/else, if/else if/else, switch/case;
+
+
+<img width="435" height="576" alt="Screenshot 2025-12-22 at 6 55 40 PM" src="https://github.com/user-attachments/assets/3d1e8cb1-41f7-489b-bb55-9e4ff6bd3b16" />
+
+<img width="529" height="571" alt="Screenshot 2025-12-22 at 6 56 09 PM" src="https://github.com/user-attachments/assets/7db2a8a8-cf77-4820-bb13-164d8f1a51d7" />
+
+<img width="609" height="112" alt="Screenshot 2025-12-22 at 6 56 17 PM" src="https://github.com/user-attachments/assets/2e0f3aad-f29d-4cb8-b4bb-72466896dc9d" />
+
 
 ## PLP Assignment 4 - Functions
 
-In C++, fucntions are used as reusable blocks of code designed to perform our desired tasks. They allow us programmers to organize our code, avoid any sort of repetition, and make programs easier to maintain and debug. A function can take inputs (called parameters), execute statements, and return a result.
+In C++, **fucntions[^4]** are used as reusable blocks of code designed to perform our desired tasks. They allow us programmers to organize our code, avoid any sort of repetition, and make programs easier to maintain and debug. A function can take inputs (called parameters), execute statements, and return a result.
 
-// Every C++ function has:
+** Every C++ function has:
 a return type (int, void, etc.)
 a name
 a parameter list inside parentheses
 a body wrapped in {}
 
-// Multiplying two numbers
+** Multiplying two numbers
 int multiply(int x, int y) {
     return x * y;
 
-// Recursive Functions, also known as Factorials
+** Recursive Functions, also known as Factorials
 int factorial(int n) {
     if (n <= 1)
         return 1;
     return n * factorial(n - 1);
 }
 
-// Splitting a String into Two
-// C++ doesn’t directly return multiple values, but you can use a pair or tuple to return more than one item.
+** Splitting a String into Two
+**C++ doesn’t directly return multiple values, but you can use a pair or tuple to return more than one item.**
 
-#include <string>
-#include <utility>
-using namespace std;
+<img width="575" height="757" alt="Screenshot 2025-12-22 at 7 00 51 PM" src="https://github.com/user-attachments/assets/71d76e45-2754-4065-af25-4e50e4b02cf1" />
 
-pair<string, string> splitString(string s) {
-    int mid = s.size() / 2;
-    return make_pair(s.substr(0, mid), s.substr(mid));
-}
+<img width="1016" height="155" alt="Screenshot 2025-12-22 at 7 01 12 PM" src="https://github.com/user-attachments/assets/215ac19d-9d46-4968-ae26-e7fa28d5a9fa" />
 
-
-// Pass by Value v/s Pass by Reference
-// C++ passes arguments by value,  meaning the function receives a copy. To modify the original, you must pass by reference using &.
-
-void modifyValue(int x) { x = 100; }
-void modifyReference(int &x) { x = 100; }
-
-int main() {
-    int num = 5;
-    modifyValue(num);       // num stays 5
-    modifyReference(num);   // num becomes 100
-}
-
-// Multiple Parameters and Different Types
-// Functions can take multiple parameters, even of different types:
-
-double describe(string name, int age) {
-    cout << name << " is " << age << " years old.";
-    return age * 1.0;
-}
 
 // More infomaton: 
 //C++ functions combine power and structure for clean code design.
@@ -193,97 +179,15 @@ double describe(string name, int age) {
 //Locals live on the stack and are destroyed after execution.
 //C++ also supports features like constexpr, inline, tuple returns, and static locals.
 
-## PLP 3 - Selection, loops, and conditionals
-** C++ uses the boolean data tyle, which offers two values: true and false;
-** C++ also supports condtional statements like: if, if/else, if/else if/else, switch/case;
-*/
 
-// Example 1: one-condition if/else
-
-bool x = true;
-if (x == true) {
-    cout << "The boolean x is true" << endl;
-} else {
-    cout << "The boolean x is false" << endl;
-}
-
-// Example 2: multi-condition if/else
-
-int x = 4;
-int y = 8;
-if (x > 0 && y < 10) {
-    cout << "x is greater than 0 and y is less than 10" << endl;
-} else {
-    cout << "The loop conditions were not satisfied" << endl;
-}
-
-// Example 3: if/else if/else
-
-int num = 0;
-if (num > 0) {
-    cout << "Positive number" << endl;
-} else if (num < 0) {
-    cout << "Negative number" << endl;
-} else {
-    cout << "The value of num is zero!" << endl;
-}
-
-// Short-circut logic: 
-// X && Y: evaluate Y only if X is true
-// X || Y: evaluate Y only if X is false
-
-// Example 4: Short-circuit
-
-int a = 4;
-int b = 0;
-if (b > 0 && (a/b) >= 2) {
-    cout << "There might be some trouble running this code" << endl;
-} 
-else {
-    cout << "Short circuit prevents div by 0" << endl;
-}
+## PLP Assignment 5 - Classes and Inheritance
 
 
-// Example 5: Switch Statements
-// C++ supports switch statements with case labels;
-// You must use break to exit a case;
-// If you omit break, execution falls through to the next case;
-
-
-int choice = 3;
-switch (choice) {
-    case 1:
-        cout << "Weather is pleasant" << endl;
-        break;
-    case 2:
-        cout << "There's incoming rain" << endl;
-        break;
-    case 3:
-        cout << "Winter is comming" << endl;
-        break;
-    default:
-        cout << "Invalid option" << endl;
-}
-
-// Dangling Else Issue
-// C++ solves any sort of dangling else issues by matching with the closest unmatched if
-
-if (x > 0) { 
-    if (x < 10) {
-        cout << "X is Positive";
-   } else {
-        cout << "X is not positive"; // else pairs with the inner if
-   }
-}
-
-
-
-
-
-// sources: https://learn.microsoft.com/en-us/cpp/cpp/functions-cpp?view=msvc-170
 ### These are the resourses I used to complete the first part of this project.
 [^1]: https://code-basics.com/blog_posts/what-is-c-plus-plus-programming-language
 [^2]: https://code.visualstudio.com/docs/languages/cpp
+[^3]: https://www.geeksforgeeks.org/cpp/cpp-decision-making/
+[^4]: https://learn.microsoft.com/en-us/cpp/cpp/functions-cpp?view=msvc-170
 
 
 
