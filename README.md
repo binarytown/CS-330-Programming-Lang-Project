@@ -242,6 +242,30 @@ Here the student class inherits from person using public inheritance.
 - we added cat_owner and setOwner;
 - printInfo is overridden to show the owner as well;
 
+
+**Questions to be answered:**
+1) a) Does C++ support objects? 
+   - C++ indeed supports objects through classes. A class is like a blueprint for an object. Each object can have:
+      - attributes;
+      - functions;
+- C++ also supports structs, which is pretty similar to classes!
+   b) Are there naming conventions for objects, instance variables, or functions?
+   - C++ doesn't specifically enforce any type of naming conventions, computer scientists usually follow guidelines like:
+       - class names;
+       - functions or methods;
+       - constants;
+
+2) Does C++ have standard methods for functions that serve a similar purpose across all
+objects?
+- C++ does not have built-in methods like toString() in Java or __str__() in Python, but we can easily achieve similar functionality by:
+   - overloading functions like printCatInfo() to display object information;
+   - overloading operators, e.g., << for cout, so you can write:
+ 
+3) How does inheritance work in C++? Does it support multiple inheritance?
+- In C++, a single class can reuse attributes and methods of another class. C++ does support multiple inheritance, e.g., inherit from 2 classes at the same time.
+- Objects in C++ can be passed by value, reference, or pointers.
+
+
 <img width="691" height="480" alt="Screenshot 2025-12-22 at 9 10 14 PM" src="https://github.com/user-attachments/assets/a47c8b18-0bcf-4c26-bdf3-4d1d6da08ec7" />
 
 **Output:**
