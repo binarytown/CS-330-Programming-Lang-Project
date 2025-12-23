@@ -59,6 +59,10 @@ int main(){ // to return int data types
 }
 ```
 
+**Output:**
+<img width="893" height="161" alt="Screenshot 2025-12-22 at 9 25 05 PM" src="https://github.com/user-attachments/assets/1938d33a-d5a1-4bb4-ac5d-a9f805d371fe" />
+
+
 ### Terms you might need help with to understand the code 
 
 - #include <iostream> - It brings in input/output tools so we can display our statements;
@@ -88,28 +92,29 @@ the reasoning behind your coding choices; */
 **  Some of which include int, float, bool, string, vector, and map
 ** This short program shows basic variable types and simple operations.
 
+```
 #include <iostream>
 #include <string>
 #include <vector>
 #include <map>
 using namespace std;
 
-int main() { // We will be using basic datatypes
+int main() { // here we will be using basic datatypes
     // Basic data types
     int age = 20;                 // integer
-    float height = 5.5;           // floating-point number
+    float height = 5.5;           // floating point num
     bool isStudent = true;        // boolean (true or false)
-    string name = "Isis";         // string (text)
+    string name = "Iris";         // string 
 
-    // These are collection types - array/list example using vector
+    // These are collection types, array/list example using vector
     vector<int> numbers = {1, 2, 3, 4, 5};
 
-    // dictionary example using map
+    // this is a dictionary ex of using map
     map<string, int> grades = {{"Math", 95}, {"CS", 98}};
 
-    // simple operations
+    // these are portrayal of some simple operators being used
     int nextYearAge = age + 1;    // arithmetic operation
-    float total = height + 1.2;   // mixed type (int + float → float)
+    float total = height + 1.2;   // mix type (int + float → float)
 
     // our output
     cout << "Name: " << name << endl;
@@ -120,23 +125,26 @@ int main() { // We will be using basic datatypes
 
     return 0;
 }
+```
+
 **Notes:**
 - Data types tell the computer what kind of information a variable storesFor example:
-- int means whole numbers like 5, 100, -3
-- float means numbers with decimals like 5.5 or 3.14
-- bool means true or false values
-- string means text, like "Hello" */
+- int means whole numbers like 5, 100, -3;
+- float means numbers with decimals like 5.5 or 3.14;
+- bool means true or false values;
+- string means text, like "Hello";
 
 
 ## PLP Assignment 3 - Selection, loops, and conditionals
-** C++ uses the boolean data tyle, which offers two values: true and false;
-** C++ also supports **condtional statements[^3]:** like: if, if/else, if/else if/else, switch/case;
+- C++ uses the boolean data tyle, which offers two values: true and false;
+- C++ also supports **condtional statements[^3]:** like: if, if/else, if/else if/else, switch/case;
 
 
 <img width="435" height="576" alt="Screenshot 2025-12-22 at 6 55 40 PM" src="https://github.com/user-attachments/assets/3d1e8cb1-41f7-489b-bb55-9e4ff6bd3b16" />
 
 <img width="529" height="571" alt="Screenshot 2025-12-22 at 6 56 09 PM" src="https://github.com/user-attachments/assets/7db2a8a8-cf77-4820-bb13-164d8f1a51d7" />
 
+**Output:**
 <img width="609" height="112" alt="Screenshot 2025-12-22 at 6 56 17 PM" src="https://github.com/user-attachments/assets/2e0f3aad-f29d-4cb8-b4bb-72466896dc9d" />
 
 
@@ -144,20 +152,20 @@ int main() { // We will be using basic datatypes
 
 In C++, **fucntions[^4]** are used as reusable blocks of code designed to perform our desired tasks. They allow us programmers to organize our code, avoid any sort of repetition, and make programs easier to maintain and debug. A function can take inputs (called parameters), execute statements, and return a result.
 
-** Every C++ function has:
-a return type (int, void, etc.)
-a name
-a parameter list inside parentheses
-a body wrapped in {}
+**Every C++ function has:**
+- a return type (int, void, etc.);
+- a name;
+- a parameter list inside parentheses;
+- a body wrapped in {};
 
-** Multiplying two numbers: 
+**Multiplying two numbers:**
 
 ```
 int multiply(int x, int y) {
    return x * y;
 ```
 
-** Recursive Functions, also known as Factorials:
+**Recursive Functions, also known as Factorials:**
 ```
 int factorial(int n) {
    if (n <= 1)
@@ -167,7 +175,7 @@ int factorial(int n) {
 ```
 
 
-** Splitting a String into Two:
+### Splitting a String into Two:
 **C++ doesn’t directly return multiple values, but you can use a pair or tuple to return more than one item.**
 
 <img width="575" height="757" alt="Screenshot 2025-12-22 at 7 00 51 PM" src="https://github.com/user-attachments/assets/71d76e45-2754-4065-af25-4e50e4b02cf1" />
@@ -184,34 +192,68 @@ int factorial(int n) {
 
 ## PLP Assignment 5 - Classes and Inheritance
 
-In C++, classes are used to create objects that group together data and functions that operate on the same data. This helps model real-world entities like people and students. C++ is an object-oriented language, so it fully supports classes, objects, and inheritance.
+In C++, classes are used to create objects that group together data and functions that operate on the same data. This helps us with the real-world entities like people and students. C++ is an object-oriented language, so it fully supports classes, objects, and inheritance.
 
-** Every C++ class has:
-- a class name
-- data members (attributes / instance variables)
-- an access specifier (public or private)
-- member functions (methods)
+**Every C++ class has:**
+- a class name;
+- data members like attributes and instance variables;
+- an access specifier which can be public or private;
+- member functions like methods;
 
-** Creating a class in C++: 
+**Creating a class[^5] in C++:**
 The Person class represents a basic person with a cat name and its age. 
 ```
+class Cat {
+public:
+    string cat_name;
+    int cat_age;
+
+    Cat(string name, int age) {
+        cat_name = name;
+        cat_age = age;
+    }
+
+    void setAge(int age) {
+        cat_age = age;
+    }
+
+    void printInfo() {
+        cout << cat_name << " is " << cat_age << " years old." << endl;
+    }
+};
 ```
+**Notes:**
+- cat_name and cat_age are attributes of the Cat object;
+- setAge lets us change the cat’s age;
+- printInfo prints the cat’s name and age to the console;
+  
+<img width="504" height="370" alt="Screenshot 2025-12-22 at 9 10 06 PM" src="https://github.com/user-attachments/assets/b6f983ee-db9f-4c61-88fa-bccfe7433357" />
 
 
-** Inheritance in C++: 
+**Inheritance[^6] in C++:**
 In C++ inheritance allows one class to reuse the attributes and functions of another class.
 Here the student class inherits from person using public inheritance.
 
 ```
 
 ```
+**Notes:**
+- petCat gets cat_name, cat_age, setAge, and other functionality from Cat;
+- we added cat_owner and setOwner;
+- printInfo is overridden to show the owner as well;
+
+<img width="691" height="480" alt="Screenshot 2025-12-22 at 9 10 14 PM" src="https://github.com/user-attachments/assets/a47c8b18-0bcf-4c26-bdf3-4d1d6da08ec7" />
+
+**Output:**
+<img width="1034" height="117" alt="Screenshot 2025-12-22 at 9 10 46 PM" src="https://github.com/user-attachments/assets/54cd4f3a-a453-4630-91f1-c79d8342b7bf" />
 
 ### These are the resourses I used to complete the first part of this project.
 [^1]: https://code-basics.com/blog_posts/what-is-c-plus-plus-programming-language
 [^2]: https://code.visualstudio.com/docs/languages/cpp
 [^3]: https://www.geeksforgeeks.org/cpp/cpp-decision-making/
 [^4]: https://learn.microsoft.com/en-us/cpp/cpp/functions-cpp?view=msvc-170
-
+[^5]: https://www.w3schools.com/cpp/cpp_classes.asp
+[^6]: https://www.geeksforgeeks.org/cpp/inheritance-in-c/
 
 
 
