@@ -120,15 +120,12 @@ int main() { // We will be using basic datatypes
 
     return 0;
 }
-/* Notes: 
-Data types tell the computer what kind of information a variable storesFor example:
-int means whole numbers like 5, 100, -3
-
-float means numbers with decimals like 5.5 or 3.14
-
-bool means true or false values
-
-string means text, like "Hello" */
+**Notes:**
+- Data types tell the computer what kind of information a variable storesFor example:
+- int means whole numbers like 5, 100, -3
+- float means numbers with decimals like 5.5 or 3.14
+- bool means true or false values
+- string means text, like "Hello" */
 
 
 ## PLP Assignment 3 - Selection, loops, and conditionals
@@ -153,35 +150,61 @@ a name
 a parameter list inside parentheses
 a body wrapped in {}
 
-** Multiplying two numbers
+** Multiplying two numbers: 
+
+```
 int multiply(int x, int y) {
-    return x * y;
+   return x * y;
+```
 
-** Recursive Functions, also known as Factorials
+** Recursive Functions, also known as Factorials:
+```
 int factorial(int n) {
-    if (n <= 1)
-        return 1;
-    return n * factorial(n - 1);
+   if (n <= 1)
+      return 1;
+   return n * factorial(n - 1);
 }
+```
 
-** Splitting a String into Two
+
+** Splitting a String into Two:
 **C++ doesn’t directly return multiple values, but you can use a pair or tuple to return more than one item.**
 
 <img width="575" height="757" alt="Screenshot 2025-12-22 at 7 00 51 PM" src="https://github.com/user-attachments/assets/71d76e45-2754-4065-af25-4e50e4b02cf1" />
 
 <img width="1016" height="155" alt="Screenshot 2025-12-22 at 7 01 12 PM" src="https://github.com/user-attachments/assets/215ac19d-9d46-4968-ae26-e7fa28d5a9fa" />
 
-
-// More infomaton: 
-//C++ functions combine power and structure for clean code design.
-//They support recursion, overloading, multiple parameter types, and multiple return options.
-//pass-by-value - copies data. Use & for pass-by-reference.
-//Locals live on the stack and are destroyed after execution.
-//C++ also supports features like constexpr, inline, tuple returns, and static locals.
+**More infomaton:**
+- C++ functions combine power and structure for clean code design.
+- They support recursion, overloading, multiple parameter types, and multiple return options.
+- pass-by-value: copies data. Use & for pass-by-reference.
+- Locals live on the stack and are destroyed after execution.
+- C++ also supports features like constexpr, inline, tuple returns, and static locals.
 
 
 ## PLP Assignment 5 - Classes and Inheritance
 
+In C++, classes are used to create objects that group together data and functions that operate on the same data. This helps model real-world entities like people and students. C++ is an object-oriented language, so it fully supports classes, objects, and inheritance.
+
+** Every C++ class has:
+- a class name
+- data members (attributes / instance variables)
+- an access specifier (public or private)
+- member functions (methods)
+
+** Creating a class in C++: 
+The Person class represents a basic person with a cat name and its age. 
+```
+```
+
+
+** Inheritance in C++: 
+In C++ inheritance allows one class to reuse the attributes and functions of another class.
+Here the student class inherits from person using public inheritance.
+
+```
+
+```
 
 ### These are the resourses I used to complete the first part of this project.
 [^1]: https://code-basics.com/blog_posts/what-is-c-plus-plus-programming-language
